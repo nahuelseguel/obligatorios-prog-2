@@ -12,8 +12,11 @@ let auto2 = new Auto("Honda","Civic",2022);
 console.log(auto1);
 console.log(auto2);
 
-auto1.acelerar();
-console.log("Esta acelerando " + auto1.estaEnMoviemiento);
+//NO ESTA FUNCIONANDO, CHEQUEAR
+auto1.cambiarMarca("chevrolet");
 
-auto1.frenar();
-console.log("Esta acelerando " + auto1.estaEnMoviemiento);
+// auto1.acelerar();
+// console.log("Esta acelerando " + auto1.estaEnMoviemiento);
+
+// auto1.frenar();
+// console.log("Esta acelerando " + auto1.estaEnMoviemiento);

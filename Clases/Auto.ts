@@ -5,12 +5,12 @@
 // Instanciar objetos y probar métodos.
 
 export class Auto {
-    marca : string;
-    modelo : string;
-    año : number;
-    estaEnciendido : boolean = false;
-    estaEstacionado : boolean = false;
-    estaEnMoviemiento : boolean = false;
+    private marca : string;
+    private modelo : string;
+    private año : number;
+    private estaEnciendido : boolean = false;
+    private estaEstacionado : boolean = false;
+    private estaEnMoviemiento : boolean = false;
     
     
     constructor(pMarca:string,pModelo:string,pAño:number){
@@ -39,6 +39,10 @@ export class Auto {
             this.estaEnMoviemiento = false;
             console.log("frenar");
         }
+    }
+
+    public cambiarMarca(pmarca:string){
+        this.marca = pmarca;
     }
 
 }

@@ -10,7 +10,7 @@ var Auto = /** @class */ (function () {
         this.estaEnciendido = false;
         this.estaEstacionado = false;
         this.estaEnMoviemiento = false;
-        this.marca = pMarca;
+        // this.marca = pMarca;
         this.modelo = pModelo;
         this.año = pAño;
     }
@@ -30,6 +30,9 @@ var Auto = /** @class */ (function () {
             this.estaEnMoviemiento = false;
             console.log("frenar");
         }
+    };
+    Auto.prototype.cambiarMarca = function (pmarca) {
+        this.marca = pmarca;
     };
     return Auto;
 }());
